@@ -1,0 +1,19 @@
+from math import sqrt
+class point :
+    x=y=0
+    def lecture_co(self) :
+        self.x=float(input("Donner l'abcisse"))
+        self.y=float(input("donner l'ordonnée"))
+    def affiche_co(self) :
+        print("coordonné horizontale : ",self.x,"coordonnée verticale : ",self.y)
+        
+    def distance(self,p2) :
+        return sqrt((self.y-p2.y)**2+(self.x-p2.x)**2)
+
+p1=point()
+p1.lecture_co()
+p1.affiche_co()
+p2=point()
+p2.lecture_co()
+p2.affiche_co()
+distance(p1,p2)
